@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập buổi 2-3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <ul class="nav nav-tabs col-12 col-lg-4" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="bai1-tab"
+          data-toggle="tab"
+          href="#bai1"
+          role="tab"
+          aria-controls="bai1"
+          aria-selected="true"
+          >Bài 1</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bai2-tab"
+          data-toggle="tab"
+          href="#bai2"
+          role="tab"
+          aria-controls="bai2"
+          aria-selected="true"
+          >Bài 2</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bai3-tab"
+          data-toggle="tab"
+          href="#bai3"
+          role="tab"
+          aria-controls="bai3"
+          aria-selected="true"
+        >
+          Bài 3
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bai4-tab"
+          data-toggle="tab"
+          href="#bai4"
+          role="tab"
+          aria-controls="bai4"
+          aria-selected="true"
+        >
+          Bài 4
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bai5-tab"
+          data-toggle="tab"
+          href="#bai5"
+          role="tab"
+          aria-controls="bai5"
+          aria-selected="true"
+        >
+          Bài 5
+        </a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+      <!-- BÀI 1: TÍNH TIỀN LƯƠNG NHÂN VIÊN -->
+      <div
+        class="tab-pane fade show active"
+        id="bai1"
+        role="tabpanel"
+        aria-labelledby="bai1-tab"
+      >
+        <div class="form-group">
+          <label for="luongNgay">Lương ngày</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name=""
+            id="luongNgay"
+            placeholder="Lương ngày"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="ngayLam">Số ngày làm</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name=""
+            id="ngayLam"
+            aria-describedby="helpId"
+            placeholder="Số ngày làm"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="tinhLuong()">
+            Tính lương
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            id="result1"
+            class="alert-warning rounded-lg col-12 col-lg-4"
+          ></div>
+        </div>
+      </div>
+
+      <!-- BÀI 2: TÍNH GIÁ TRỊ TRUNG BÌNH -->
+      <div
+        class="tab-pane fade show"
+        id="bai2"
+        role="tabpanel"
+        aria-labelledby="bai2-tab"
+      >
+        <div class="form-group">
+          <label for="soThu1">Số thứ 1</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soThu1"
+            id="soThu1"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 1"
+          />
+        </div>
+        <div class="form-group">
+          <label for="soThu2">Số thứ 2</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soThu2"
+            id="soThu2"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 2"
+          />
+        </div>
+        <div class="form-group">
+          <label for="soThu3">Số thứ 3</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soThu3"
+            id="soThu3"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 3"
+          />
+        </div>
+        <div class="form-group">
+          <label for="soThu4">Số thứ 4</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soThu4"
+            id="soThu4"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 4"
+          />
+        </div>
+        <div class="form-group">
+          <label for="soThu5">Số thứ 5</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soThu5"
+            id="soThu5"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 5"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="tinhTB()">
+            Tính trung bình
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            id="result2"
+            class="alert-warning rounded-lg col-12 col-lg-4"
+          ></div>
+        </div>
+      </div>
+
+      <!-- BÀI 3: QUY ĐỔI TIỀN -->
+      <div
+        class="tab-pane fade show"
+        id="bai3"
+        role="tabpanel"
+        aria-labelledby="bai3-tab"
+      >
+        <div class="form-group">
+          <label for="tyGia">Tỷ giá VND/USD</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name=""
+            id="tyGia"
+            placeholder="Tỷ giá VND/USD"
+            value="23500"
+            readonly
+          />
+        </div>
+        <div class="form-group">
+          <label for="soTienUSD">Số tiền USD</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="soTienUSD"
+            id="soTienUSD"
+            aria-describedby="helpId"
+            placeholder="Nhập số tiền USD"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="quyDoi()">
+            Quy đổi tiền
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            id="result3"
+            class="alert-warning rounded-lg col-12 col-lg-4"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 4: TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT -->
+      <div
+        class="tab-pane fade show"
+        id="bai4"
+        role="tabpanel"
+        aria-labelledby="bai4-tab"
+      >
+        <div class="form-group">
+          <label for="chieuDai">Chiều dài</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name=""
+            id="chieuDai"
+            placeholder="Nhập chiều dài"
+            value=""
+          />
+        </div>
+        <div class="form-group">
+          <label for="chieuRong">Chiều rộng</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name=""
+            id="chieuRong"
+            aria-describedby="helpId"
+            placeholder="Nhập chiều rộng"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="tinhToan()">
+            Tính
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            id="result4"
+            class="alert-warning rounded-lg col-12 col-lg-4"
+          ></div>
+        </div>
+      </div>
+      <!-- BÀI 5: TÍNH TỔNG 2 KÝ SỐ -->
+      <div
+        class="tab-pane fade show"
+        id="bai5"
+        role="tabpanel"
+        aria-labelledby="bai5-tab"
+      >
+        <div class="form-group">
+          <label for="conSo">Con số</label>
+          <input
+            type="text"
+            class="form-control col-12 col-lg-4"
+            name="conSo"
+            id="conSo"
+            aria-describedby="helpId"
+            placeholder="Nhập con số có 2 chữ số"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" onclick="tinhTong()">
+            Tính tổng
+          </button>
+        </div>
+        <div class="form-group">
+          <div
+            id="result5"
+            class="alert-warning rounded-lg col-12 col-lg-4"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./bai1.js"></script>
+    <script src="./bai2.js"></script>
+    <script src="./bai3.js"></script>
+    <script src="./bai4.js"></script>
+    <script src="./bai5.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
